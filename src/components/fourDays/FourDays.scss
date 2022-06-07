@@ -1,0 +1,65 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.fourDays-container {
+  @include core;
+}
+
+.fourDays-title {
+  padding: 50px 0 20px 0;
+  text-align: center;
+}
+
+.fourDays-city {
+  @include core-font-title;
+}
+
+.fourDays-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+.fourDays-element {
+  font-size: $standart;
+  color: $white;
+  max-width: 220px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid rgb(136, 168, 174);
+  border-radius: 15px;
+}
+
+.fourDays-element:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  box-shadow: 2px 2px 10px rgb(119, 185, 197);
+  transition: all 0.2s;
+}
+
+.fourDays-date {
+  @include blur;
+  width: 200px;
+  text-align: center;
+}
+
+.fourDays-icon {
+  max-width: 130px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.fourDays-button {
+  @include button;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: auto;
+  display: block;
+}
+
+.fourDays-button:hover {
+  @include button-hover;
+}

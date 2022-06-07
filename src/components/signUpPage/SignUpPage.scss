@@ -1,0 +1,58 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.signUp {
+  @include core;  
+
+  &-container {
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  &-title {
+    @include core-font-title;
+  }
+
+  &-input {
+    width: 300px;
+    padding: $xs $xl $xs $m;
+    border-radius: $m;
+    outline: none;
+    border: none;
+    box-shadow: 2px 0px 12px rgb(78, 147, 188);
+    font-size: $small;
+    margin: $s;
+  }
+  &-input::placeholder {
+    color: rgb(78, 147, 188);
+    font-size: $small;
+  }
+
+  &-btn {
+    border-radius: $m;
+    padding: 2px 30px;
+    font-size: $small;
+    font-weight: bold;
+    color: $btn;
+    border: 2px solid $btn;
+    background: rgba(243, 243, 243, 0.869);
+    backdrop-filter: blur(6.4px);
+    text-transform: uppercase;
+    margin: 15px 20px;
+    transition: all 0.8s;
+  }
+
+  &-btn:hover {
+    @include button-hover;
+  } 
+
+  &-link {
+    text-decoration: none;
+    color: $btn;
+  }
+}
+
+.signUp-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}

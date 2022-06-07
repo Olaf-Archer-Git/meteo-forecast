@@ -1,0 +1,58 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.nextDay {
+  @include core;  
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 50px;
+
+  &-title {
+    @include core-font-title;
+    margin-bottom: 50px;
+  }
+
+  &-item {
+    @include core-font;
+    @include blur;
+    width: 250px;
+    text-align: center;
+    margin: 44px auto;
+    padding: 3px;
+  }
+
+  &-elements {
+    @include blur;
+    display: block;
+    font-size: $standart;
+    color: $white;
+    width: 250px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+  &-box {
+    text-align: center;
+  }
+
+  &-icon {
+    width: 180px;
+    height: 165px;
+    margin: 23px 0;
+  }
+
+  &-items {
+    @include blur;
+    display: block;
+    font-size: $standart;
+    color: $white;
+    width: 250px;
+    text-align: center;
+    margin: 45px auto;
+    padding: 5px;
+  }
+  &-items:first-child {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,55 @@
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin blur {
+  background: rgba(154, 163, 178, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border: 1px solid rgba(6, 31, 69, 0.3);
+}
+
+@mixin core {
+  @include blur;
+  height: 500px;
+  margin-bottom: 30px;
+  border-radius: $m;
+}
+
+@mixin core-font-title {
+  font-weight: bold;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+@mixin core-font {
+  color: #fff;
+  font-size: 21px;
+  margin-bottom: $s;
+}
+
+@mixin button {
+  margin: 0 0 0 $s;
+  border-radius: $m;
+  padding: 2px $m;
+  font-size: $small;
+  font-weight: bold;
+  color: $btn;
+  border: 2px solid $btn;
+  background: rgba(243, 243, 243, 0.869);
+  backdrop-filter: blur(6.4px);
+  -webkit-backdrop-filter: blur(6.4px);
+}
+
+@mixin button-hover {
+  color: $white;
+  text-shadow: 5px 2px 12px rgb(255, 255, 255);
+  background: #85a5b3;
+  transition: 0.2s;
+}

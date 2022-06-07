@@ -1,0 +1,21 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.app {
+  background-image: linear-gradient(
+      rgba(142, 211, 190, 0.475),
+      rgba(5, 9, 33, 0.9)
+    ),
+    url("../assets/day-bg.jpg");
+
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+
+  &-container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 $s;
+  }
+}

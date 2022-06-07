@@ -1,0 +1,41 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.error {
+  @include core;
+  text-align: center;
+  padding-top: $xl;
+  color: #ffff;
+  text-shadow: 1px 0 3px #ffff;
+  font-size: $large;
+
+  &-number {
+    font-size: $xxl;
+    font-weight: bold;
+  }
+
+  &-text {
+    font-size: $standart;
+  }
+
+  &-box{
+    margin-top: 75px;
+  }
+
+  &-button {
+    text-decoration: none;    
+    border-radius: $l;
+    padding: $xs $l;
+    font-size: $small;
+    font-weight: bold;
+    color: $btn;
+    border: 2px solid $btn;
+    background: rgba(243, 243, 243, 0.869);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+  }
+
+  &-buttom:hover{
+    @include button-hover;
+  }
+}

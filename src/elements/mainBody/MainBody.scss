@@ -1,0 +1,82 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.main-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 50px;
+}
+
+.main-title {
+  font-weight: bold;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.main-subtitle {
+  color: #fff;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 21px;
+  margin-bottom: $s;
+}
+
+.main-item {
+  color: #fff;
+  font-size: 21px;
+  margin-bottom: $s;
+}
+
+.main-btn {
+  @include button;
+  margin: 5px 0;
+}
+
+.main-btn:hover {
+  @include button-hover;
+}
+
+.main-link {
+  text-decoration: none;
+}
+
+.mainBody-disabled {
+  display: none;
+}
+
+.main-icons {
+  text-align: center;
+}
+
+.main-date {
+  @include blur;
+  display: block;
+  font-size: $standart;
+  color: $white;
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.main-box {
+  text-align: center;
+}
+
+.main-img {
+  width: 170px;
+  height: 155px;
+  margin: 10px 0;
+}
+
+.main-daily-data {
+  @include blur;
+  font-size: $standart;
+  color: $white;
+  margin-bottom: $m;
+  padding: 5px $l;
+  display: flex;
+  align-items: center;
+}

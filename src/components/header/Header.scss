@@ -1,0 +1,50 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.header {
+  @include flex;
+  padding: $l 0;
+
+  &-button {
+    @include button;
+    background: rgb(235, 233, 233);
+  }
+
+  &-button:hover {
+    @include button-hover;
+  }
+  &-button:active {
+    transform: translateY(-3px);
+  }
+
+  &-link {
+    text-decoration: none;
+    color: $btn;
+  }
+}
+
+.header-ref {
+  background-color: rgb(225, 230, 234);
+  border: 2px solid rgb(76, 139, 210); 
+  padding: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  position: relative;
+  opacity: 0.6;
+}
+
+.header-ref:hover{
+  background-color: rgb(161, 184, 202);
+  transition: all 0.3s;
+  opacity: 1; 
+  box-shadow: 3px 1px 18px rgb(255, 255, 255); 
+}
+
+
+@media (max-width: 435px) {
+  .header-button {
+    display: block;
+    margin: 5px;
+    width: 100px;
+  }
+}

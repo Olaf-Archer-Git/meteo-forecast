@@ -1,0 +1,16 @@
+@import "~normalize.css";
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  min-height: 100vh;
+}
+
+
